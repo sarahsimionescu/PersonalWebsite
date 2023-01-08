@@ -3,6 +3,10 @@ This is a personal Website made using Astro to display and link my resume and so
 
 Currently depoloyed at: https://sarahsimionescu.netlify.app/
 
+Currently the cool animated background does not work when deployed. The image below shows what it is supposed to look like.
+
+![Latest screenshot of what the website looks like](./screenshot_for_readme.png)
+
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
