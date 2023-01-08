@@ -1,0 +1,108 @@
+---
+import "../styles/global.css";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import resume from "../images/resume.png";
+import email from "../images/email.png";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;600&display=swap");
+		</style>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Sarah Simionescu</title>
+	</head>
+	<body>
+		<div class="background" id="particle-canvas"></div>
+		<script>
+			import particleNetwork from "../scripts/particle-network.js";
+
+			const canvasDiv = document.getElementById("particle-canvas");
+			const options = {
+				particleColor: "#fff",
+				background: "#1a252f",
+				interactive: true,
+				speed: "slow",
+				density: "medium",
+			};
+			const particleCanvas = new ParticleNetwork(canvasDiv, options);
+		</script>
+		<div class="main">
+			<h1 class="main__name">Sarah Simionescu</h1>
+			<h2 class="main__subtitle">CS Student • Analyst • Developer</h2>
+			<div class="main__iconlist">
+				<a
+					class="main__iconlist__icon"
+					href="https://github.com/sarahsimionescu"
+					><img
+						class="main__iconlist__icon__image"
+						src={github}
+						alt="The Github logo."
+					/>
+				</a>
+				<a
+					class="main__iconlist__icon"
+					href="https://www.linkedin.com/in/sarah-simionescu/"
+				>
+					<img
+						class="main__iconlist__icon__image"
+						src={linkedin}
+						alt="The LinkedIn logo."
+					/>
+				</a>
+				<a
+					class="main__iconlist__icon"
+					href="/Sarah_Simionescu_Resume.pdf"
+				>
+					<img
+						class="main__iconlist__icon__image"
+						src={resume}
+						alt="An icon that signifies a resume."
+					/>
+				</a>
+				<a
+					class="main__iconlist__icon"
+					href="mailto:simiones@mcmaster.ca"
+				>
+					<img
+						class="main__iconlist__icon__image"
+						src={email}
+						alt="An icon that signifies email."
+					/>
+				</a>
+			</div>
+		</div>
+		<footer>
+			<a
+				href="https://www.flaticon.com/free-icons/linkedin"
+				title="linkedin icons"
+				>Linkedin icons created by Freepik - Flaticon</a
+			>
+			<a
+				href="https://www.flaticon.com/free-icons/personal-information"
+				title="personal information icons"
+				>Personal information icons created by lakonicon - Flaticon</a
+			>
+			<a
+				href="https://www.flaticon.com/free-icons/github"
+				title="github icons"
+				>Github icons created by Pixel perfect - Flaticon</a
+			>
+			<a
+				href="https://www.flaticon.com/free-icons/email"
+				title="email icons"
+				>Email icons created by Uniconlabs - Flaticon</a
+			>
+			<a
+				href="https://github.com/JulianLaval/canvas-particle-network/blob/master/particle-network.js"
+				title="canvas-partical-network"
+				>Canvas Partical Network created by Julian Laval - GitHub</a
+			>
+		</footer>
+	</body>
+</html>
