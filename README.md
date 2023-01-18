@@ -1,5 +1,5 @@
 # Personal Website
-This is a personal Website made using Astro to display and link my resume and socials. Currently a work in progress!
+This is a personal Website made using Astro to display and link my resume and socials. **Currently a work in progress!**
 
 Currently depoloyed at: https://sarahsimionescu.netlify.app/
 
